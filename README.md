@@ -1,2 +1,2 @@
 # YUHUI-S-BREAK-TIMER
-A simple timer application created by Yuhui
+![image](hughzhoutrt.github.com/YUHUI-BREAK-TIMER/image/demoBreakTimer.png)
