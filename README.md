@@ -17,6 +17,8 @@ This is my first JavaScript project. The process of building this timer is in my
   
 **Be-back function:** user can choose another time input method which is called **Be-back**, in this case, the time to be alerted will be set by user and the application can calculate it, then the result will be displayed on the screen and wait for counting down. (**Notice:** the format of input for Be-back function is hr:min while the normal one is min:sec, and the range of be-back time setting is a whole day (24 hours) in advance.)  
   
+**Act record:** this application records user's behaviours and displays on the page to reminder what user did before, for significant acts, user can mark them by click important button.
+  
 **Theme color:** This application provides three types of theme, users can select their preferences.  
   
 **Language setting:** This application provides both English and Chinese version.
