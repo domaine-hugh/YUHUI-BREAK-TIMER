@@ -483,3 +483,17 @@ footer div p::after {
     }
     /* Footer end */
 }
+
+/* Nexus 7 Android 6.0.1 */
+@media (max-width: 600px) {
+    .timeScreen {
+        margin: 3vh auto;
+        height: 26vh;
+        width:80vw;
+    }
+
+    #inputMinute,
+    #inputSecond {
+        width:5vw;
+    }
+}
