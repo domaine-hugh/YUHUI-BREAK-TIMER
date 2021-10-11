@@ -505,6 +505,16 @@ footer div p::after {
     #inputSecond {
         width:5vw;
     }
+
+    .forCountdownTime,
+    .forAlarmTime,
+    .forSubmit {
+        font-size:1.5vh;
+    }
+
+    .logSection {
+        font-size: 1.5vh;
+    }
 }
 
 /* Landscape phones and down */
@@ -550,6 +560,11 @@ footer div p::after {
         font-size:1vh;
     }
     /* Main time input end */
+    /* Log section start */
+    .logSection {
+        font-size: 1vh;
+    }
+    /* Log section end */
     /* Footer start */
     footer div p {
         font-size:1vh;
