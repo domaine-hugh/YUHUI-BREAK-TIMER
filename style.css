@@ -139,6 +139,10 @@ header {
     display: flex;
     justify-content: space-evenly;
 }
+.lunchTime,
+.coffeeTime {
+    margin-right:25px;
+}
 .lunchTime::before {
     content:'';
     background-image: url(image/lunchtime.png);
@@ -342,3 +346,140 @@ footer div p::after {
     margin-left: 5px;
 }
 /* Footer end */
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    /* Body Wrap */
+    body {
+        text-align: center;
+        padding: 2vh 5vw;
+        width:90vw;
+    }
+    /* For all button */
+    button {
+        font-size: 1.5vh;
+    }
+    /* Header start */
+    header {
+        margin-bottom: 5vh;
+    }
+    .headerLeftSide p {
+        font-size: 2vh;
+    }
+    .headerLeftSide p::before {
+        width:2vh;
+        height:2vh;
+        margin-right: 1vw;
+    }
+    .themeChanging,
+    .languageChanging {
+        margin-right: 1vw;
+    }
+    .themeDropdown li,
+    .languageDropdown li {
+        width:20vw;
+    }
+    .themeChanging .themeLogo::before, 
+    .languageButton::before,
+    .greenThemeSpan,
+    .blueThemeSpan,
+    .pinkThemeSpan,
+    .englishLanguage button::before,
+    .chineseLanguage button::before {
+        width:1.5vh;
+        height:1.5vh;
+        margin-right: 1vw;
+    }
+    .themeDropdown ul,
+    .languageDropdown ul {
+        margin-top: 1vh;
+    }
+    /* Header end */
+    /* Main quick access button start */
+    .lunchTime,
+    .coffeeTime {
+        margin-right:3vw;
+    }
+    .lunchTime::before,
+    .workBreak::before, 
+    .coffeeTime::before,
+    .pomodoro::before {
+        width:1.5vh;
+        height:1.5vh;
+        margin-right: 1vw;
+    }
+    /* Main quick access button end */
+    /* Main time screen start */
+    .timeScreen {
+        margin:3vh 0;
+    }
+    .timeScreen p {
+        font-size: 9vh;
+    }
+    /* Main time screen end */
+    /* Main control panel start */
+    .startButton::before,
+    .clearupButton::before,
+    .reduceTime::before,
+    .addTime::before {
+        width:1.5vh;
+        height:1.5vh;
+        margin-right: 1vw;
+    }
+    /* Main control panel end */
+    /* Main time input start */
+    .timeType {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .inputTime {
+        margin-bottom: 2vh;
+    }
+    #inputMinute,
+    #inputSecond {
+        width:4vw;
+        height: 3vh;
+    }
+    .inputTime input {
+        height: 3vh;
+        margin-left: 1vw;
+        font-family: 'Patrick Hand', cursive;
+        border-radius: 0;
+        border-style: solid;
+        background-color: rgb(239, 225, 206);
+    }
+    .inputTime div p {
+        height: 1vh;
+    }
+    .timeType div p {
+        margin-right: 1vw;
+    }
+    .colonSpace {
+        margin-left: 1vw;
+    }
+    /* Main time input end */
+    /* Main log part start */
+    .eventLog>p::before,
+    .cleanLog::before,
+    .importantstyle p:after {
+        width:1.5vh;
+        height:1.5vh;
+        margin-right: 1vw;
+    }
+    .cleanLog {
+        margin: 1vh 0;
+    }
+
+    .importantButton {
+        margin: 1vh 0 1vh 1vw;
+    }
+    /* Main log part end */
+    /* Footer start */
+    footer div p::after {
+        width:1.5vh;
+        height:1.5vh;
+        margin-right: 1vw;
+    }
+    /* Footer end */
+}

@@ -23,11 +23,14 @@
                 <button class="themeLogo">Theme</button>
                 <div class="themeDropdown">
                     <ul>
-                        <li class="greenTheme"><button ><span class="greenThemeSpan"></span><span class="greenThemeText">Green Ash</span></button></li>
+                        <li class="greenTheme"><button><span class="greenThemeSpan"></span><span
+                                    class="greenThemeText">Green Ash</span></button></li>
                         <!-- HEX: #A0DAA9 -->
-                        <li class="blueTheme"><button><span class="blueThemeSpan"></span><span class="blueThemeText">Serenity</span></button></li>
+                        <li class="blueTheme"><button><span class="blueThemeSpan"></span><span
+                                    class="blueThemeText">Serenity</span></button></li>
                         <!-- Hex #b3cee5 -->
-                        <li class="pinkTheme"><button><span class="pinkThemeSpan">⇒</span><span class="pinkThemeText">Rose Quartz</span></button></li>
+                        <li class="pinkTheme"><button><span class="pinkThemeSpan">⇒</span><span
+                                    class="pinkThemeText">Rose Quartz</span></button></li>
                         <!-- Hex #F7CAC9 -->
                     </ul>
                 </div>
@@ -46,25 +49,35 @@
     <main>
         <section>
             <div class="quickAccessButton">
-                <button class="lunchTime">Lunch Time</button>
-                <button class="workBreak">Work Break</button>
-                <button class="coffeeTime">Coffee Time</button>
-                <button class="pomodoro">Pomodoro</button>
+                <div>
+                    <button class="lunchTime">Lunch Time</button>
+                    <button class="workBreak">Work Break</button>
+                </div>
+                <div>
+                    <button class="coffeeTime">Coffee Time</button>
+                    <button class="pomodoro">Pomodoro</button>
+                </div>
             </div>
             <div class="timeScreen">
-                <p class="mins" id="minsTens">0</p><p class="mins" id="minsOnes">0</p>
+                <p class="mins" id="minsTens">0</p>
+                <p class="mins" id="minsOnes">0</p>
                 <P class="betweenminsandsecs">:</P>
-                <P class="seconds" id="secondsTens">0</p><p class="seconds" id="secondsOnes">0</P>
+                <P class="seconds" id="secondsTens">0</p>
+                <p class="seconds" id="secondsOnes">0</P>
             </div>
             <div class="startAndClearup">
                 <button class="startButton">Start</button>
                 <button class="clearupButton">Reset</button>
             </div>
             <div class="timeSettingButton">
-                <button class="reduceTime" id="reduceMinute">Reduce a minute</button>
-                <button class="reduceTime" id="reduceSecond">Reduce a second</button>
-                <button class="addTime" id="addSecond">Add a second</button>
-                <button class="addTime" id="addMinute">Add a minute</button>
+                <div>
+                    <button class="reduceTime" id="reduceMinute">Reduce a minute</button>
+                    <button class="reduceTime" id="reduceSecond">Reduce a second</button>
+                </div>
+                <div>
+                    <button class="addTime" id="addSecond">Add a second</button>
+                    <button class="addTime" id="addMinute">Add a minute</button>
+                </div>
             </div>
         </section>
         <form class="inputTime">
@@ -96,13 +109,15 @@
 
             </div>
             <div class="cleanLogDiv">
-            <button class="cleanLog">Log Clean Up!</button>
+                <button class="cleanLog">Log Clean Up!</button>
             </div>
         </section>
     </main>
     <footer>
         <div>
-            <a href="https://junocollege.com/"><p class="footerCreated">Created at JUNO College of Technology</p></a>
+            <a href="https://junocollege.com/">
+                <p class="footerCreated">Created at JUNO College of Technology</p>
+            </a>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
