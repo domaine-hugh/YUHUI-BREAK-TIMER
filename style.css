@@ -184,7 +184,7 @@ header {
 .timeScreen {
     display: flex;
     justify-content: center;
-    margin:20px 0;
+    margin:20px auto;
     background-image: url(image/clockbackground.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -411,7 +411,7 @@ footer div p::after {
     /* Main quick access button end */
     /* Main time screen start */
     .timeScreen {
-        margin:3vh 0;
+        margin:3vh auto;
     }
     .timeScreen p {
         font-size: 9vh;
@@ -454,6 +454,7 @@ footer div p::after {
     }
     .timeType div p {
         margin-right: 1vw;
+        font-size: 1.5vh;
     }
     .colonSpace {
         margin-left: 1vw;
@@ -486,14 +487,72 @@ footer div p::after {
 
 /* Nexus 7 Android 6.0.1 */
 @media (max-width: 600px) {
+    body {
+        padding: 2vh 3vw;
+        width:100vw;
+    }
+
     .timeScreen {
-        margin: 3vh auto;
         height: 26vh;
         width:80vw;
+    }
+
+    .timeScreen p {
+        margin-top:8vh;
     }
 
     #inputMinute,
     #inputSecond {
         width:5vw;
     }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    /* For all button */
+    button {
+        font-size: 1vh;
+    }
+    /* Header start */
+    header {
+        margin-bottom: 2vh;
+    }
+    .headerLeftSide p {
+        font-size: 1.5vh;
+    }
+    /* Header end */
+    /* Main time screen start */
+    .timeScreen {
+        margin: 3vh auto;
+        height: 22vh;
+        width:90vw;
+    }
+    .timeScreen p {
+        font-size: 9vh;
+        margin-top:6vh;
+    }
+    /* Main time screen end */
+    /* Main time input start */
+    #inputMinute,
+    #inputSecond {
+        width:8vw;
+        height: 3vh;
+    }
+
+    .timeType div p {
+        margin-right: 1vw;
+        font-size:1vh;
+    }
+
+    .forCountdownTime,
+    .forAlarmTime,
+    .forSubmit {
+        font-size:1vh;
+    }
+    /* Main time input end */
+    /* Footer start */
+    footer div p {
+        font-size:1vh;
+    }
+    /* Footer end */
 }
