@@ -11,7 +11,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 /* Body Wrap */
 body {
     background-color: #F7CAC9;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand', Arial;
     text-align: center;
     padding: 10px 50px;
     margin:0 auto;
@@ -19,7 +19,7 @@ body {
 }
 /* For all button */
 button {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand', Arial;
     border: none;
     background-color: #F7CAC9;
 }
@@ -129,9 +129,11 @@ header {
 }
 .themeChanging:hover .themeDropdown {
     display: block;
+    left: -50px;
 }
 .languageChanging:hover .languageDropdown {
     display: block;
+    left: -50px;
 }
 /* Header end */
 /* Main quick access button start */
@@ -237,6 +239,11 @@ header {
 .addTime {
     margin: 0 5px 20px;
 }
+
+.timeSettingButton {
+    display: flex;
+    justify-content: space-evenly;
+}
 /* Main control panel end */
 /* Main time input start */
 .inputTime {
@@ -252,7 +259,7 @@ header {
 .inputTime input {
     height: 25px;
     margin-left: 5px;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand', Arial;
     border-radius: 0;
     border-style: solid;
     background-color: rgb(239, 225, 206);
@@ -444,7 +451,7 @@ footer div p::after {
     .inputTime input {
         height: 3vh;
         margin-left: 1vw;
-        font-family: 'Patrick Hand', cursive;
+        font-family: 'Patrick Hand', Arial;
         border-radius: 0;
         border-style: solid;
         background-color: rgb(239, 225, 206);
@@ -525,11 +532,12 @@ footer div p::after {
     }
     /* Header start */
     header {
-        margin-bottom: 2vh;
+        margin-bottom: 5vh;
     }
     .headerLeftSide p {
         font-size: 1.5vh;
     }
+
     /* Header end */
     /* Main time screen start */
     .timeScreen {
